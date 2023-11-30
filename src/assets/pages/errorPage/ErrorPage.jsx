@@ -1,15 +1,16 @@
 
-
+import pic from "../../../../public/assets/error.jpg"
 import {Link, useRouteError } from 'react-router-dom'
 
 const ErrorPage = () => {
   const { error, status } = useRouteError()
   return (
-    <section className='flex items-center h-screen p-16 bg-gray-100 text-gray-900'>
-      <div className='container flex flex-col items-center justify-center px-5 mx-auto my-8'>
+    <section className='flex items-center h-screen text-gray-900'>
+      <div className='container flex flex-col items-center justify-center px-5 mx-auto my-4'>
        
         <div className='max-w-md text-center'>
-          <h2 className='mb-8 font-bold text-8xl'>
+          <h2 className='mb-4 font-bold text-7xl'>
+            <img src={pic} alt="" />
             <span className='sr-only'>Error</span>
             {status || 404}
           </h2>

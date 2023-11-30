@@ -8,7 +8,7 @@ function Banner() {
     <>
       <div>
             <div className="carousel max-h-[610px] rounded">
-                <div id="item1" className="carousel-item relative w-full">
+                <div id="item1" className="carousel-item relative w-full z-1">
 
                     <img src={banner} className="w-full" />
                     <div className="absolute h-full">

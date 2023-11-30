@@ -1,11 +1,11 @@
-function Home() {
- 
+import Banner from "./banner/Banner";
 
-    return (
-      <>
-      <h1>Hellooooooooo HR Digital</h1>
-      </>
-    )
-  }
-  
-  export default Home
+function Home() {
+  return (
+    <>
+     <Banner></Banner>
+    </>
+  );
+}
+
+export default Home;
